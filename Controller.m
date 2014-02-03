@@ -16,8 +16,8 @@ NSString *curr_num = @"";
 BOOL equalsPressed = false;
 
 - (IBAction)operationHandler:(UIButton *)sender {
-    NSArray *operators = [NSArray arrayWithObjects: @"+", @"-", @"÷", @"x", @"+/-", @"cos", @"x²", nil]; // include all operators
-    NSArray *unaryOperators = [NSArray arrayWithObjects: @"sqrt", @"sin", @"tan", @"cos", @"sin", @"x²", nil]; // only unary
+    NSArray *operators = [NSArray arrayWithObjects: @"+", @"-", @"÷", @"x", @"+/-", @"sin", @"cos", @"tan", @"x²", @"√x", @"log₂", @"xʸ", @"1/x", @"+/-", @"n!", @"%", nil]; // include all operators
+    NSArray *unaryOperators = [NSArray arrayWithObjects: @"sin", @"tan", @"cos", @"x²", @"√x", @"log₂", @"1/x", @"+/-", @"n!", @"%", nil]; // only unary
     NSString *button_pressed = [sender currentTitle];
     
     if (!brain)
@@ -31,6 +31,7 @@ BOOL equalsPressed = false;
                     for (NSString *op in unaryOperators) {
                         if([button_pressed isEqual:op]) {
                             [self compute:op brain:brain];
+                            [brain setOperator:@""];
                             //equalsPressed = false;
                             return;
                         }
@@ -47,7 +48,9 @@ BOOL equalsPressed = false;
                             [brain setOperand:[brain performOperation:[brain operator]]];
                             curr_num = [NSString stringWithFormat:@"%g", [brain operand]];
                             display.text = curr_num;
+                            curr_num = @"";
                             equalsPressed = true;
+                            [brain setOperator:@""];
                             //[self compute:op brain:brain];
                             return;
                         }
@@ -59,14 +62,6 @@ BOOL equalsPressed = false;
                     return;
                 }
             } else { //If operator was previously assigned
-                for (NSString *op in unaryOperators) {
-                    if([button_pressed isEqual:op]) {
-                        [brain setOperand:[curr_num doubleValue]];
-                        [brain setOperand:[brain performOperation:[brain operator]]];
-                        [self compute:op brain:brain];
-                        return;
-                    }
-                }
                 [brain setOperand:[curr_num doubleValue]];
                 [brain setOperand:[brain performOperation:[brain operator]]];
                 curr_num = [NSString stringWithFormat:@"%g", [brain operand]];

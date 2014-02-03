@@ -77,17 +77,17 @@
         lhs = cos(rhs);
     } else if ([operation isEqual:@"tan"]) {
         lhs = tan(rhs);
-    } else if ([operation isEqual:@"!"]) {
+    } else if ([operation isEqual:@"n!"]) {
         lhs = [self factorial:rhs];
-    } else if ([operation isEqual:@"sqrt"]) {
+    } else if ([operation isEqual:@"√x"]) {
         lhs = sqrt(rhs);
     } else if ([operation isEqual:@"x²"]) {
         lhs = pow(rhs, 2);
-    } else if ([operation isEqual:@"log2"]) {
+    } else if ([operation isEqual:@"log₂"]) {
         lhs = log2(rhs);
     } else if ([operation isEqual:@"ln"]) {
         lhs = log(rhs);
-    } else if ([operation isEqual:@"x^y"]) {
+    } else if ([operation isEqual:@"xʸ"]) {
         lhs = pow(lhs, rhs);
     } else if ([operation isEqual:@"%"]) {
         lhs = fmod(lhs, rhs);
