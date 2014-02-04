@@ -41,6 +41,10 @@
     memory = operand;
 }
 
+- (void)memoryClear {
+    memory = 0;
+}
+
 - (double)memoryRecall {
     return memory;
 }

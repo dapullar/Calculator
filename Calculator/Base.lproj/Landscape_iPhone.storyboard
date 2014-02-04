@@ -500,8 +500,8 @@
                                     <action selector="switchColour:" destination="0Ii-jZ-zHg" eventType="valueChanged" id="LRQ-FD-wwz"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7y-7N-l3y">
-                                <rect key="frame" x="8" y="71" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7y-7N-l3y">
+                                <rect key="frame" x="8" y="71" width="363" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -516,6 +516,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ea4-jw-smb" sceneMemberID="firstResponder"/>
                 <customObject id="0Ii-jZ-zHg" userLabel="Controller" customClass="Controller">
                     <connections>
+                        <outlet property="currInput" destination="J7y-7N-l3y" id="BFp-84-52T"/>
                         <outlet property="display" destination="VRh-a4-bUx" id="0rf-wm-scu"/>
                         <outlet property="radDeg" destination="waU-SZ-Pr1" id="y80-h9-1fT"/>
                     </connections>

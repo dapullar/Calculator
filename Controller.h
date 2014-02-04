@@ -12,6 +12,7 @@
 @interface Controller : NSObject {
     IBOutlet UILabel *display;
     IBOutlet UISwitch *radDeg;
+    IBOutlet UILabel *currInput;
 }
 
 - (IBAction)operationHandler:(UIButton *)sender;

@@ -20,6 +20,7 @@
 - (double)operand;
 - (void)setOperand:(double)operand;
 - (void)memoryStorage:(double)operand;
+- (void)memoryClear;
 - (double)memoryRecall;
 - (void)memoryAdd:(double)operand;
 - (void)memorySubtract:(double)operand;
