@@ -23,6 +23,7 @@
 		C61AB78C188D9F7D0026374A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C61AB78A188D9F7D0026374A /* InfoPlist.strings */; };
 		C61AB78E188D9F7D0026374A /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C61AB78D188D9F7D0026374A /* CalculatorTests.m */; };
 		C61AB799188D9F950026374A /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = C61AB798188D9F950026374A /* CalculatorBrain.m */; };
+		C62F5CCE18A0AF080042E3AF /* LandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62F5CCD18A0AF080042E3AF /* LandscapeViewController.m */; };
 		C66E3EF2189C00D500F330E2 /* Landscape_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66E3EF0189C00D500F330E2 /* Landscape_iPhone.storyboard */; };
 		C68C3AE41891F008009CF7EC /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = C68C3AE31891F008009CF7EC /* Controller.m */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,8 @@
 		C61AB78D188D9F7D0026374A /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
 		C61AB797188D9F950026374A /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
 		C61AB798188D9F950026374A /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
+		C62F5CCC18A0AF080042E3AF /* LandscapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapeViewController.h; sourceTree = "<group>"; };
+		C62F5CCD18A0AF080042E3AF /* LandscapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapeViewController.m; sourceTree = "<group>"; };
 		C66E3EF1189C00D500F330E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Landscape_iPhone.storyboard; sourceTree = "<group>"; };
 		C68C3AE21891F008009CF7EC /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		C68C3AE31891F008009CF7EC /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				C61AB774188D9F7D0026374A /* Main_iPad.storyboard */,
 				C61AB777188D9F7D0026374A /* ViewController.h */,
 				C61AB778188D9F7D0026374A /* ViewController.m */,
+				C62F5CCC18A0AF080042E3AF /* LandscapeViewController.h */,
+				C62F5CCD18A0AF080042E3AF /* LandscapeViewController.m */,
 				C61AB77A188D9F7D0026374A /* Images.xcassets */,
 				C61AB766188D9F7D0026374A /* Supporting Files */,
 			);
@@ -271,6 +276,7 @@
 				C68C3AE41891F008009CF7EC /* Controller.m in Sources */,
 				C61AB770188D9F7D0026374A /* AppDelegate.m in Sources */,
 				C61AB799188D9F950026374A /* CalculatorBrain.m in Sources */,
+				C62F5CCE18A0AF080042E3AF /* LandscapeViewController.m in Sources */,
 				C61AB76C188D9F7D0026374A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

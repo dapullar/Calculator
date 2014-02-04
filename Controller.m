@@ -58,6 +58,10 @@ BOOL equalsPressed = false;
                 curr_num = @"";
                 //Clear screen
             } else if([character isEqual:@"del"]) {
+                if (![curr_num isEqualToString:@""]) {
+                    curr_num = [curr_num substringToIndex:([curr_num length] - 1)];
+                    display.text = curr_num;
+                }
                 //Subtracts 4 characters from label
                 //If currnum has something in it, subtract one char
             }
