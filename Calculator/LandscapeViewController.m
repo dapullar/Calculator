@@ -1,11 +1,3 @@
-//
-//  LandscapeViewController.m
-//  Calculator
-//
-//  Created by David Pullar on 2/2/2014.
-//  Copyright (c) 2014 David Pullar. All rights reserved.
-//
-
 #import "LandscapeViewController.h"
 
 @interface LandscapeViewController ()

@@ -1,11 +1,3 @@
-//
-//  Controller.h
-//  Calculator
-//
-//  Created by David Pullar on 1/23/2014.
-//  Copyright (c) 2014 David Pullar. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import "CalculatorBrain.h"
 
